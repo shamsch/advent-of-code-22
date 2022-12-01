@@ -5,7 +5,7 @@ This repository contains my solutions to the [Advent of Code 2022](https://adven
 # Languages Used
 
 - [x] [Python](https://www.python.org/)
-- [x] [Go](https://golang.org/)
+- [] [Go](https://golang.org/)
 
 # Running the Solutions
 
