@@ -5,7 +5,7 @@ This repository contains my solutions to the [Advent of Code 2022](https://adven
 # Languages Used
 
 - [x] [Python](https://www.python.org/)
-- [ ] [Go](https://golang.org/)
+- [x] [Go](https://golang.org/)
 
 # Running the Solutions
 
@@ -21,6 +21,6 @@ python3 day1/puzzle1.py
 To run the Go solutions, you will need to have Go installed. You can then run the solutions using the following command for example:
 
 ```bash
-go run day1/puzzle1.go
+go run day1/go/main.go
 ```
 
