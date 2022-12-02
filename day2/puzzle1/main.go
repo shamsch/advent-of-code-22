@@ -20,6 +20,15 @@ var moveMap = map[string]int{
 	"Z": 3,
 }
 
+var rockPaperScissors = map[string]string{
+	"A": "Rock",
+	"B": "Paper",
+	"C": "Scissors",
+	"X": "Rock",
+	"Y": "Paper",
+	"Z": "Scissors",
+}
+
 func main () {
 	// read a text file
 	pwd, _ := os.Getwd()
@@ -43,16 +52,27 @@ func main () {
 		myMove := string(moves[2])
 
 		// calculate the score
-		if moveMap[elfMove] > moveMap[myMove] {
-			fmt.Println("Elf wins", elfMove, ">", myMove)
-			elfScore += roundWinPnt
-		} else if moveMap[elfMove] < moveMap[myMove] {
-			fmt.Println("I win", myMove, ">", elfMove)
-			myScore += roundWinPnt
-		} else if moveMap[elfMove] == moveMap[myMove] {
-			fmt.Println("Draw", elfMove, "=", myMove)
+		if rockPaperScissors[elfMove] == rockPaperScissors[myMove] {
 			elfScore += roundDrawPnt
 			myScore += roundDrawPnt
+		} else if rockPaperScissors[elfMove] == "Rock" && rockPaperScissors[myMove] == "Paper" {
+			elfScore += roundLosePnt
+			myScore += roundWinPnt
+		} else if rockPaperScissors[elfMove] == "Rock" && rockPaperScissors[myMove] == "Scissors" {
+			elfScore += roundWinPnt
+			myScore += roundLosePnt
+		} else if rockPaperScissors[elfMove] == "Paper" && rockPaperScissors[myMove] == "Rock" {
+			elfScore += roundWinPnt
+			myScore += roundLosePnt
+		} else if rockPaperScissors[elfMove] == "Paper" && rockPaperScissors[myMove] == "Scissors" {
+			elfScore += roundLosePnt
+			myScore += roundWinPnt
+		} else if rockPaperScissors[elfMove] == "Scissors" && rockPaperScissors[myMove] == "Rock" {
+			elfScore += roundLosePnt
+			myScore += roundWinPnt
+		} else if rockPaperScissors[elfMove] == "Scissors" && rockPaperScissors[myMove] == "Paper" {
+			elfScore += roundWinPnt
+			myScore += roundLosePnt
 		}
 
 		// add the score of the move to the player's score
