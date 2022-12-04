@@ -2,30 +2,11 @@ package main
 
 import (
 	"fmt"
-	"os"
-	"bufio"
 	"strings"
 	"strconv"
+	"github.com/shamsch/advent-of-code-22/helper"
 )
 
-func readInputFileLines(location string) []string {
-	file, err := os.Open(location)
-	if err != nil {
-		panic(err)
-	}
-
-	defer file.Close()
-	
-	scanner := bufio.NewScanner(file)
-	
-	var lines []string
-
-	for scanner.Scan() {
-		lines = append(lines, scanner.Text())
-	}
-
-	return lines
-}
 
 type Pairs struct {
 	Start int
@@ -43,7 +24,7 @@ func comparePairsForOverlap(pair1 Pairs, pair2 Pairs) bool {
 }
 
 func main() {
-	lines := readInputFileLines("input.txt")
+	lines := helper.ReadInputFileLines("day4/input.txt")
 	sum := 0
 
 	for _, line := range lines {
