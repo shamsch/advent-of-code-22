@@ -54,8 +54,7 @@ func calculateScore(elfMove string, command string) int {
 
 func main () {
 	// read a text file
-	pwd, _ := os.Getwd()
-	file, err := os.Open(pwd+"/../input.txt")
+	file, err := os.Open("day2/input.txt")
 	if err != nil {
 		panic(err)
 	}
