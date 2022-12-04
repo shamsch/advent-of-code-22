@@ -1,3 +1,3 @@
-module github.com/shamsch/advent-of-code-2022/helper
+module github.com/shamsch/advent-of-code-22
 
 go 1.19
