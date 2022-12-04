@@ -12,8 +12,7 @@ var maximum = 0
 
 func main() {
 	// read a text file
-	pwd, _ := os.Getwd()
-	file, err := os.Open(pwd+"/day1/go/input.txt")
+	file, err := os.Open("day1/input.txt")
 	if err != nil {
 		panic(err)
 	}
