@@ -1,9 +1,8 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
+	"github.com/shamsch/advent-of-code-22/helper"
 )
 
 var values = map[string]int{
@@ -61,28 +60,10 @@ var values = map[string]int{
 	"Z": 52,
 }
 
-func readInputFileLines(location string) []string {
-	pwd, _ := os.Getwd()
-	file, err := os.Open(pwd+location)
-	if err != nil {
-		panic(err)
-	}
 
-	defer file.Close()
-	
-	scanner := bufio.NewScanner(file)
-	
-	var lines []string
-
-	for scanner.Scan() {
-		lines = append(lines, scanner.Text())
-	}
-
-	return lines
-}
 
 func main() {
-	lines := readInputFileLines("/../input.txt")
+	lines := helper.ReadInputFileLines("day3/input.txt")
 	sum := 0
 	for _, line := range lines {
 		halfLength := len(line) / 2
