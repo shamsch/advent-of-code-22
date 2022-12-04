@@ -13,7 +13,7 @@ This repository contains my solutions to the [Advent of Code 2022](https://adven
 
 # Running the solutions
 
-To run the Go files, you will need to have Go installed. Here is a link to the [Go download page](https://golang.org/dl/) for you system. Once you have Go installed, you can then run the solutions using the following command for example:
+To run the Go files, you will need to have Go installed. Here is a link to the [Go download page](https://golang.org/dl/) for your system. Once you have Go installed, you can then run the solutions using the following command for example:
 
 ```bash
 go run day1/problem1/main.go
