@@ -24,3 +24,12 @@ func ReadInputFileLines(location string) []string {
 
 	return lines
 }
+
+func SliceContains(slice []string, val string) bool {
+	for _, item := range slice {
+		if item == val {
+			return true
+		}
+	}
+	return false
+}
