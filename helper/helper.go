@@ -25,7 +25,7 @@ func ReadInputFileLines(location string) []string {
 	return lines
 }
 
-func SliceContains(slice []string, val string) bool {
+func SliceContains[T comparable](slice []T, val T) bool {
 	for _, item := range slice {
 		if item == val {
 			return true
