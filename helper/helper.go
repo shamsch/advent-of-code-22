@@ -1,9 +1,9 @@
 package helper
 
-
 import (
 	"bufio"
 	"os"
+	"sort"
 )
 
 func ReadInputFileLines(location string) []string {
@@ -32,4 +32,11 @@ func SliceContains(slice []string, val string) bool {
 		}
 	}
 	return false
+}
+
+func ReverseSlice[T comparable] (slice []T) []T {
+	sort.SliceStable(slice, func(i, j int) bool {
+        return i > j
+    })
+	return slice
 }
