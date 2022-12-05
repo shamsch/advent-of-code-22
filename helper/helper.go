@@ -41,10 +41,10 @@ func ReverseSlice[T comparable] (slice []T) []T {
 	return slice
 }
 
-func CloneAMap(src map[string]string) map[string]string {
-    dst := make(map[string]string, len(src))
-    for k, v := range src {
-        dst[k] = v
-    }
-    return dst
+func CloneASlice[T comparable] (slice []T) []T {
+	clone := make([]T, len(slice))
+	for i, v := range slice {
+		clone[i] = v
+	}
+	return clone
 }
