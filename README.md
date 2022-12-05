@@ -10,7 +10,7 @@ This repository contains my solutions to the [Advent of Code 2022](https://adven
 | 2 | :heavy_check_mark: | :heavy_check_mark: |
 | 3 | :heavy_check_mark: | :heavy_check_mark: |
 | 4 | :heavy_check_mark: | :heavy_check_mark: |
-| 5 | :heavy_check_mark: | :construction: |
+| 5 | :heavy_check_mark: | :heavy_check_mark: |
 
 # Running the solutions
 
