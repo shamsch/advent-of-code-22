@@ -10,8 +10,10 @@ func main() {
 	
 	for _, line := range lines {
 		allChars := breakLineIntoChars(line)
-		result := readChars(allChars)
-		fmt.Println(result)
+		part1 := findMarker(allChars, 4)
+		part2 := findMarker(allChars, 14)
+		fmt.Println(part1)
+		fmt.Println(part2)
 	}
 }
 
@@ -26,11 +28,11 @@ func checkIfAllElementsAreUnique(list []string) bool {
 	return true
 }
 
-func readChars(chars []string) int {
+func findMarker(chars []string, numOfUniqueChar int) int {
 	counter := 0
 	listOfChars := []string{}
 	for index, char := range chars {
-		if len(listOfChars)==4{
+		if len(listOfChars)==numOfUniqueChar{
 			result := checkIfAllElementsAreUnique(listOfChars)
 			if result {
 				return index
