@@ -11,7 +11,14 @@ This repository contains my solutions to the [Advent of Code 2022](https://adven
 | 3 | :heavy_check_mark: | :heavy_check_mark: |
 | 4 | :heavy_check_mark: | :heavy_check_mark: |
 | 5 | :heavy_check_mark: | :heavy_check_mark: |
-| 6 | :heavy_check_mark: | :heavy_check_mark: | 
+| 6 | :heavy_check_mark: | :heavy_check_mark: |
+| 7 | :construction: | :construction: |
+| 8 | :construction: | :construction: |
+| 9 | :construction: | :construction: |
+| 10 | :construction: | :construction: | 
+| 11 | :construction: | :construction: |
+| 12 | :construction: | :construction: |
+| 13 | :construction: | :construction: |
 
 # Running the solutions
 
