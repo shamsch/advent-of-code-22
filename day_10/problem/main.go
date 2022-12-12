@@ -22,7 +22,7 @@ func main() {
 			valueAndLine[lineNumber] = lineStrength
 		}
 	}
-	value = calculateValue(5, valueAndLine)
+	value = calculateValue(20, valueAndLine)
 	fmt.Println(strength, value)
 }
 
