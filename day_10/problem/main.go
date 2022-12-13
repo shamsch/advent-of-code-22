@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	lines := helper.ReadInputFileLines("day10/input.txt")
+	lines := helper.ReadInputFileLines("day_10/input.txt")
 	strength := 0
 	value := 0 
 	valueAndLine := make(map[int]int)
@@ -28,11 +28,22 @@ func main() {
 
 func calculateValue(cycle int, valueAndLine map[int]int) int {
 	value := 0
-	for i:=1; i<=cycle; i++ {
-		for line, strength := range valueAndLine {
-			if line+2 == i {
-				value += strength
-			}
+	tempSlice := []int{}
+	sortedKeys := helper.SortMapByKeys(valueAndLine)
+	 half := cycle/2
+	for _, line := range sortedKeys {
+		fmt.Println(line, valueAndLine[line])
+		if len(tempSlice) == 2{
+			value += tempSlice[0]
+			tempSlice = tempSlice[1:]
+		}
+		if line == half {
+			fmt.Println("half -- line", cycle, line,)
+
+			break;
+		} else {
+			tempSlice = append(tempSlice, valueAndLine[line])
+			fmt.Println(tempSlice, value)
 		}
 	}
 	return value+1
