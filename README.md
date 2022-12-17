@@ -19,6 +19,13 @@ This repository contains my solutions to the [Advent of Code 2022](https://adven
 | 11 | :construction: | :construction: |
 | 12 | :construction: | :construction: |
 | 13 | :construction: | :construction: |
+| 14 | :construction: | :construction: |
+| 15 | :construction: | :construction: |
+| 16 | :construction: | :construction: |
+| 17 | :construction: | :construction: |
+| 18 | :construction: | :construction: |
+| 19 | :construction: | :construction: |
+| 20 | :construction: | :construction: |
 
 # Running the solutions
 
