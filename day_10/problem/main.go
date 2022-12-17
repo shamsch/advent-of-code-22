@@ -12,6 +12,7 @@ func main() {
 	lines := helper.ReadInputFileLines("day_10/input.txt")
 	valueArray := []int{}
 	value := 1 
+	strength := 0
 	for _, line := range lines {
 		if line =="noop"{
 			valueArray = append(valueArray, value)
@@ -23,7 +24,10 @@ func main() {
 			value += increment
 		}
 	}
-	fmt.Println(valueArray)
+	for i:=20; i<=220; i+=40{
+		strength += valueArray[i-1]*i
+	}
+	fmt.Println(strength)
 }
 
 func calculateValue()  {
